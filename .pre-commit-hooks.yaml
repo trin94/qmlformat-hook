@@ -1,0 +1,8 @@
+
+- id: qmlformat
+  name: qmlformat
+  description: Check and format QML files using qmlformat.
+  entry: qmlformat-hook
+  language: python
+  additional_dependencies:
+  - PySide6
