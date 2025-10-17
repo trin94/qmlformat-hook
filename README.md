@@ -23,3 +23,16 @@ The only standalone, multiplatform pre-commit hook for formatting QML files usin
    ```
 
 3. Make a commit with QML files to see the hook in action.
+
+## Configuration
+
+### qmlformat Version
+
+To use a specific qmlformat version, specify the PySide6 version in additional_dependencies:
+   
+   ```yaml
+   hooks:
+     - id: qmlformat
+       additional_dependencies:
+         - PySide6==6.9.3
+   ```
